@@ -1,0 +1,104 @@
+
+@media(max-width:800px){
+    #header-home{
+        height: 100%;
+        
+        .header-content {
+            padding-top:2rem; 
+         }
+
+    }
+   
+}
+@media(max-width:799px)and (min-width:501px){
+ #header {
+     &-home {
+         height: 10rem;
+         border-bottom: 3px solid $main-color;
+         background-position: 20% 30%;
+
+         .header-container {
+             display: none;
+         }
+     }
+    }
+}
+@media(max-width:500px) {
+    #main-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    li{
+        padding: .5rem;
+    }
+    #header{
+        &-home{
+            height: 10rem;
+            border-bottom:3px solid $main-color;
+            background-position: 20% 30%;
+            .header-container {
+                display: none;
+            }
+        }
+         &-inner {
+             height: 10rem;
+             border-bottom: 3px solid $main-color;
+
+             .header-container {
+                 display: none;
+             }
+         }
+
+    }
+    // stackgrid
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    #about-d .testimonials,.items{
+        
+            grid-template-columns: repeat(1,1fr)
+
+    }
+    #home{
+        &-a{
+            .specials div{
+                border-bottom: 1px $light-color solid;
+                padding-bottom: 1rem;
+
+                &:last-child{
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    #about{
+        &-a{
+         .about-info {
+            
+             grid-template-areas:
+                'bioimage'
+                'bio'
+                'aw1''aw2' 'aw3' 'aw4';
+             grid-gap: 1rem;
+         }
+      
+        }
+    }
+    #main-footer{
+        height: 7rem;
+        .footer-content{
+            flex-direction: column;
+            padding: 1rem;
+            height: 5rem;
+            text-align: center;
+            .social{
+                margin: auto
+            }
+        }
+    }
+
+}
+
